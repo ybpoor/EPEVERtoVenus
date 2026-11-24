@@ -1,0 +1,22 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "app_config.c"
+        "modbus_rtu.c"
+        "modbus_epever.c"
+        "venus_mqtt.c"
+        "wifi_manager.c"
+        "web_portal.c"
+    INCLUDE_DIRS
+        "../include"
+    REQUIRES
+        driver
+        esp_wifi
+        esp_event
+        esp_netif
+        nvs_flash
+        mqtt
+        esp_http_server
+        json
+        lwip
+)
